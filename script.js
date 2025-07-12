@@ -92,6 +92,18 @@ function copyStatBlock() {
   const statText = document.getElementById("statBlock").innerText;
   navigator.clipboard
     .writeText(statText)
+    .then(() => {
+      const btn = document.getElementById("copyButton");
+      const originalText = btn.textContent;
+      btn.textContent = "Copied!";
+      btn.classList.remove("btn-secondary");
+      btn.classList.add("btn-success");
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.classList.remove("btn-success");
+        btn.classList.add("btn-secondary");
+      }, 2000);
+    })
     .catch((err) => console.error("Could not copy stat block:", err));
 }
 

@@ -4,7 +4,7 @@ This simple tool helps generate a basic Pathfinder 2e creature stat block direct
 
 ## Usage
 
-1. Open `index.html` in any modern web browser – no build step or server is required.
+1. Open `index.html` in any modern web browser. Running a local HTTP server is recommended; for example, run `python -m http.server` in this directory.
 2. Choose the creature level and damage type from the dropdown menus on the left.
 3. Click **Generate Stat Block**. The right side of the page will display the creature's statistics along with example creatures for that level.
 

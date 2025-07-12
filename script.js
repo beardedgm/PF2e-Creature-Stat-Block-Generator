@@ -86,3 +86,16 @@ document
         "No examples available";
     }
   });
+
+// Function to copy the stat block text to the clipboard
+function copyStatBlock() {
+  const statText = document.getElementById("statBlock").innerText;
+  navigator.clipboard
+    .writeText(statText)
+    .catch((err) => console.error("Could not copy stat block:", err));
+}
+
+// Event listener for the copy button
+document
+  .getElementById("copyButton")
+  .addEventListener("click", copyStatBlock);

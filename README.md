@@ -1,4 +1,4 @@
-# PF2e Creature Stat Block Generator
+# Pathfinder 2e Statblock Generator
 
 This simple tool helps generate a basic Pathfinder 2e creature stat block directly in your browser. It uses a predefined data table and JavaScript to fill in numbers for the selected level and damage type.
 
